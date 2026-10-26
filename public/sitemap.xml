@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
+  <url><loc>https://biztap.in/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://biztap.in/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://biztap.in/services</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://biztap.in/industries</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://biztap.in/pricing</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://biztap.in/portfolio</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://biztap.in/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+
+  <!-- Service Detail Pages -->
+  <url><loc>https://biztap.in/services/website-development</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/business-websites</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/ecommerce-websites</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/landing-pages</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/website-redesign</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/nfc-smart-review-cards</loc><priority>0.9</priority></url>
+  <url><loc>https://biztap.in/services/digital-business-profiles</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/qr-code-solutions</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/services/whatsapp-integration</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/booking-systems</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/services/seo</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/services/website-maintenance</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/services/custom-web-applications</loc><priority>0.8</priority></url>
+
+  <!-- Industry Detail Pages -->
+  <url><loc>https://biztap.in/industries/schools</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/clinics</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/shops-retail</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/photography</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/restaurants-cafes</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/gyms-fitness</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/salons</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/beauty-parlours</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/portfolios</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/industries/builders-architects</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/ca-tax-consultants</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/lawyers-legal</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/hotels-hospitality</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/real-estate</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/industries/custom-business</loc><priority>0.8</priority></url>
+
+  <!-- Supporting & Guides -->
+  <url><loc>https://biztap.in/blog</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://biztap.in/blog/why-your-business-needs-a-website</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/blog/how-nfc-review-cards-work</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/blog/how-to-improve-your-online-presence</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/blog/website-cost-india</loc><priority>0.8</priority></url>
+  <url><loc>https://biztap.in/faq</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/how-it-works</loc><priority>0.7</priority></url>
+  <url><loc>https://biztap.in/get-a-quote</loc><priority>0.9</priority></url>
+
+  <!-- Legal -->
+  <url><loc>https://biztap.in/privacy-policy</loc><priority>0.3</priority></url>
+  <url><loc>https://biztap.in/terms-and-conditions</loc><priority>0.3</priority></url>
+  <url><loc>https://biztap.in/refund-policy</loc><priority>0.3</priority></url>
+</urlset>
