@@ -107,7 +107,8 @@ export const RAW_SERVICES = [
     gradient: 'from-amber-500 to-orange-600',
     buttonGradient: 'bg-amber-600 hover:bg-amber-500 text-white shadow-[0_0_15px_rgba(217,119,6,0.35)]',
     accentBorder: 'hover:border-amber-500/50',
-    category: 'E-commerce Websites'
+    category: 'E-commerce Websites',
+    exampleUrl: 'https://www.allbirds.com/'
   },
   {
     id: 'personal-portfolio',
@@ -128,7 +129,8 @@ export const RAW_SERVICES = [
     gradient: 'from-purple-500 to-violet-600',
     buttonGradient: 'bg-purple-600 hover:bg-purple-500 text-white shadow-[0_0_15px_rgba(147,51,234,0.35)]',
     accentBorder: 'hover:border-purple-500/50',
-    category: 'Personal Portfolio Websites'
+    category: 'Personal Portfolio Websites',
+    exampleUrl: 'https://sanskarspandey.github.io/Portfolio/'
   },
   {
     id: 'gaming-cafe-websites',
@@ -171,7 +173,8 @@ export const RAW_SERVICES = [
     gradient: 'from-pink-500 to-rose-600',
     buttonGradient: 'bg-pink-600 hover:bg-pink-500 text-white shadow-[0_0_15px_rgba(219,39,119,0.35)]',
     accentBorder: 'hover:border-pink-500/50',
-    category: 'Photography Websites'
+    category: 'Photography Websites',
+    exampleUrl: 'https://lillerphoto.com'
   },
   {
     id: 'restaurant-cafe',
@@ -192,7 +195,8 @@ export const RAW_SERVICES = [
     gradient: 'from-amber-600 to-orange-600',
     buttonGradient: 'bg-amber-600 hover:bg-amber-500 text-white shadow-[0_0_15px_rgba(217,119,6,0.35)]',
     accentBorder: 'hover:border-amber-500/50',
-    category: 'Restaurant & Café Websites'
+    category: 'Restaurant & Café Websites',
+    exampleUrl: 'https://www.dishoom.com'
   },
   {
     id: 'gym-fitness',
@@ -213,7 +217,8 @@ export const RAW_SERVICES = [
     gradient: 'from-red-600 to-rose-700',
     buttonGradient: 'bg-red-600 hover:bg-red-500 text-white shadow-[0_0_15px_rgba(220,38,38,0.35)]',
     accentBorder: 'hover:border-red-500/50',
-    category: 'Gym & Fitness Websites'
+    category: 'Gym & Fitness Websites',
+    exampleUrl: 'https://gymbox.com'
   },
   {
     id: 'salon-beauty',
@@ -235,7 +240,7 @@ export const RAW_SERVICES = [
     buttonGradient: 'bg-fuchsia-600 hover:bg-fuchsia-500 text-white shadow-[0_0_15px_rgba(192,38,211,0.35)]',
     accentBorder: 'hover:border-fuchsia-500/50',
     category: 'Salon & Beauty Websites',
-    exampleUrl: 'https://jonalansalon.com'
+    exampleUrl: 'https://www.salonsck.com/'
   },
   {
     id: 'ca-tax-consultant',
@@ -256,7 +261,8 @@ export const RAW_SERVICES = [
     gradient: 'from-teal-500 to-cyan-600',
     buttonGradient: 'bg-teal-600 hover:bg-teal-500 text-white shadow-[0_0_15px_rgba(13,148,136,0.35)]',
     accentBorder: 'hover:border-teal-500/50',
-    category: 'CA & Tax Consultant Websites'
+    category: 'CA & Tax Consultant Websites',
+    exampleUrl: 'https://www.cleartax.com'
   },
   {
     id: 'lawyer-legal',
@@ -277,7 +283,8 @@ export const RAW_SERVICES = [
     gradient: 'from-amber-600 to-yellow-600',
     buttonGradient: 'bg-amber-600 hover:bg-amber-500 text-white shadow-[0_0_15px_rgba(217,119,6,0.35)]',
     accentBorder: 'hover:border-amber-500/50',
-    category: 'Lawyer & Legal Websites'
+    category: 'Lawyer & Legal Websites',
+    exampleUrl: 'https://trilegal.com'
   },
   {
     id: 'custom-business',
