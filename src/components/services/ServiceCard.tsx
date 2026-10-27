@@ -12,6 +12,10 @@ import {
   Calculator,
   Scale,
   Settings,
+  HardHat,
+  Hotel,
+  Home,
+  Store,
   Sparkles,
   Check,
   ExternalLink,
@@ -55,6 +59,14 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
         return <Calculator className="w-6 h-6 text-white" />;
       case 'Scale':
         return <Scale className="w-6 h-6 text-white" />;
+      case 'HardHat':
+        return <HardHat className="w-6 h-6 text-white" />;
+      case 'Hotel':
+        return <Hotel className="w-6 h-6 text-white" />;
+      case 'Home':
+        return <Home className="w-6 h-6 text-white" />;
+      case 'Store':
+        return <Store className="w-6 h-6 text-white" />;
       case 'Settings':
         return <Settings className="w-6 h-6 text-white" />;
       default:
@@ -132,9 +144,9 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
             target="_blank"
             rel="noopener noreferrer"
             className="w-full py-2 px-4 rounded-xl font-medium text-xs text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/70 transition-all flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none"
-            title={`See live reference website for ${service.title}`}
+            title={`Explore website inspiration for ${service.title}`}
           >
-            <span>See Live Example</span>
+            <span>Explore Website Inspiration</span>
             <ExternalLink className="w-3.5 h-3.5 text-blue-400" />
           </a>
         ) : (
@@ -142,9 +154,9 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
             type="button"
             onClick={() => onSeeDemo(service)}
             className="w-full py-2 px-4 rounded-xl font-medium text-xs text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/70 transition-all flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none"
-            title={`See live example demo for ${service.title}`}
+            title={`Explore website inspiration for ${service.title}`}
           >
-            <span>See Live Example</span>
+            <span>Explore Website Inspiration</span>
             <ExternalLink className="w-3.5 h-3.5 text-blue-400" />
           </button>
         )}

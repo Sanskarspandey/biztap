@@ -32,12 +32,23 @@ const INITIAL_VALUES: FormValues = {
 };
 
 const SERVICE_OPTIONS = [
+  'School & College Websites',
+  'Clinic & Healthcare Websites',
+  'Salon & Beauty Websites',
+  'Gym & Fitness Websites',
+  'Restaurant & Café Websites',
+  'E-commerce Websites',
+  'Photography Portfolio Websites',
+  'CA & Accounting Firm Websites',
+  'Lawyer & Law Firm Websites',
+  'Construction & Builder Websites',
+  'Hotel & Hospitality Websites',
+  'Real Estate Websites',
+  'Personal Portfolio Websites',
+  'Retail Business Websites',
   'Custom Business Website',
   'Website Redesign',
-  'E-Commerce Website',
-  'Portfolio Website',
-  'Website Maintenance & Support',
-  'Something Else',
+  'Other / Custom Requirement',
 ];
 
 const BUDGET_OPTIONS = [

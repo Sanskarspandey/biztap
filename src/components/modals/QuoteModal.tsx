@@ -19,7 +19,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [websiteType, setWebsiteType] = useState('School Websites');
+  const [websiteType, setWebsiteType] = useState('School & College Websites');
   const [requirements, setRequirements] = useState('');
   const [errors, setErrors] = useState<Record<string, string>>({});
 
