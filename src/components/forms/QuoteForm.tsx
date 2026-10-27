@@ -87,7 +87,7 @@ export const QuoteForm: React.FC = () => {
           </div>
           <h3 className="text-2xl font-bold text-forest-950">Quote Request Compiled!</h3>
           <p className="text-sm text-charcoal-600 max-w-md mx-auto">
-            We have routed your selected configuration to WhatsApp (+91 9372948245). Our team will review your specifications and reply with an itemized project agreement.
+            We have routed your selected configuration to WhatsApp (Mumbai: {COMPANY.mumbai.phone} / Chennai: {COMPANY.chennai.phone}). Our team will review your specifications and reply with an itemized project agreement.
           </p>
           <div className="pt-4">
             <button
@@ -283,7 +283,7 @@ export const QuoteForm: React.FC = () => {
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="+91 93729 48245"
+                  placeholder="+91 98765 43210"
                   className={`w-full px-3.5 py-2.5 rounded-xl border text-sm text-charcoal-900 focus:outline-none focus:ring-2 focus:ring-forest-800 ${
                     formErrors.phone ? 'border-red-400 bg-red-50/30' : 'border-cream-300 bg-cream-50/40'
                   }`}

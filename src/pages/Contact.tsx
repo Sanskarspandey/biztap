@@ -11,7 +11,7 @@ export const Contact: React.FC = () => {
     <>
       <SEO
         title="Contact BizTap — Direct WhatsApp & Consultation"
-        description="Get in touch with BizTap for web development, NFC smart review cards, and digital profiles. WhatsApp: +91 9372948245, Email: sanskar.p.work@gmail.com."
+        description="Get in touch with BizTap for web development, NFC smart review cards, and digital profiles. Mumbai: +91 89280 51768, Chennai: +91 93729 48245, Email: sanskar.p.work@gmail.com."
       />
 
       {/* Breadcrumb Header */}
@@ -47,23 +47,45 @@ export const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-forest-950">Official WhatsApp Support</h3>
-                    <p className="text-xs text-charcoal-600">Quickest response time (under 2 hours)</p>
+                    <p className="text-xs text-charcoal-600">Quick response from our Mumbai &amp; Chennai teams</p>
                   </div>
                 </div>
 
-                <p className="text-sm font-extrabold text-forest-900 tracking-tight">
-                  {COMPANY.phone}
-                </p>
+                <div className="space-y-2 pt-1">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-forest-950">Mumbai:</span>
+                    <a href={COMPANY.mumbai.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-800 font-bold">
+                      {COMPANY.mumbai.phone} ↗
+                    </a>
+                  </div>
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-bold text-forest-950">Chennai:</span>
+                    <a href={COMPANY.chennai.whatsappUrl} target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:text-emerald-800 font-bold">
+                      {COMPANY.chennai.phone} ↗
+                    </a>
+                  </div>
+                </div>
 
-                <a
-                  href={getWhatsAppUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-lg transition-colors shadow-xs"
-                >
-                  <MessageSquare className="w-3.5 h-3.5" />
-                  <span>Start WhatsApp Chat Now</span>
-                </a>
+                <div className="pt-2 flex flex-col sm:flex-row gap-2">
+                  <a
+                    href={COMPANY.mumbai.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-lg transition-colors shadow-xs"
+                  >
+                    <MessageSquare className="w-3.5 h-3.5" />
+                    <span>WhatsApp Mumbai</span>
+                  </a>
+                  <a
+                    href={COMPANY.chennai.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-lg transition-colors shadow-xs"
+                  >
+                    <MessageSquare className="w-3.5 h-3.5" />
+                    <span>WhatsApp Chennai</span>
+                  </a>
+                </div>
               </div>
 
               {/* Direct Phone & Email Card */}
@@ -72,16 +94,25 @@ export const Contact: React.FC = () => {
                   Direct Inquiries & Calling
                 </h3>
 
-                <div className="space-y-3 text-xs text-charcoal-700">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-cream-100 flex items-center justify-center text-forest-800">
+                <div className="space-y-3.5 text-xs text-charcoal-700">
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-cream-100 flex items-center justify-center text-forest-800 flex-shrink-0 mt-0.5">
                       <Phone className="w-4 h-4" />
                     </div>
-                    <div>
-                      <span className="block text-charcoal-500 text-[11px]">Phone Support:</span>
-                      <a href={`tel:${COMPANY.phone}`} className="font-bold text-charcoal-900 hover:text-forest-900">
-                        {COMPANY.phone}
-                      </a>
+                    <div className="space-y-1.5 flex-1">
+                      <span className="block text-charcoal-500 text-[11px] font-semibold">Phone Support:</span>
+                      <div>
+                        <span className="font-bold text-charcoal-900 block">Mumbai</span>
+                        <a href={COMPANY.mumbai.telUrl} className="text-forest-900 font-semibold hover:underline">
+                          {COMPANY.mumbai.phone}
+                        </a>
+                      </div>
+                      <div className="pt-1 border-t border-cream-200">
+                        <span className="font-bold text-charcoal-900 block">Chennai</span>
+                        <a href={COMPANY.chennai.telUrl} className="text-forest-900 font-semibold hover:underline">
+                          {COMPANY.chennai.phone}
+                        </a>
+                      </div>
                     </div>
                   </div>
 

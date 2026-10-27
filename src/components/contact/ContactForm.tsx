@@ -18,6 +18,7 @@ interface FormValues {
   businessName: string;
   interestedIn: string;
   budget: string;
+  preferredOffice: 'Mumbai' | 'Chennai';
   message: string;
 }
 
@@ -28,6 +29,7 @@ const INITIAL_VALUES: FormValues = {
   businessName: '',
   interestedIn: '',
   budget: '',
+  preferredOffice: 'Mumbai',
   message: '',
 };
 
@@ -66,6 +68,8 @@ export const ContactForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submittedMessage, setSubmittedMessage] = useState<string | null>(null);
   const [whatsappUrl, setWhatsappUrl] = useState<string>('');
+  const [whatsappUrlMumbai, setWhatsappUrlMumbai] = useState<string>('');
+  const [whatsappUrlChennai, setWhatsappUrlChennai] = useState<string>('');
   const [emailUrl, setEmailUrl] = useState<string>('');
   const [copied, setCopied] = useState(false);
 
@@ -104,6 +108,7 @@ export const ContactForm: React.FC = () => {
 
   const prepareEnquiry = () => {
     const lines: string[] = ["Hi BizTap! I'd like to discuss a project.", ''];
+    lines.push(`Preferred Office: ${values.preferredOffice}`);
     lines.push(`Name: ${values.name.trim()}`);
     if (values.email.trim()) lines.push(`Email: ${values.email.trim()}`);
     if (values.phone.trim()) lines.push(`Phone: ${values.phone.trim()}`);
@@ -115,16 +120,21 @@ export const ContactForm: React.FC = () => {
     lines.push(values.message.trim());
 
     const formatted = lines.join('\n');
-    const waUrl = `https://wa.me/${AGENCY.whatsappNumber}?text=${encodeURIComponent(formatted)}`;
+    const selectedOffice = values.preferredOffice === 'Chennai' ? AGENCY.chennai : AGENCY.mumbai;
+    const waUrl = `https://wa.me/${selectedOffice.whatsappNumber}?text=${encodeURIComponent(formatted)}`;
+    const waUrlMumbai = `https://wa.me/${AGENCY.mumbai.whatsappNumber}?text=${encodeURIComponent(formatted)}`;
+    const waUrlChennai = `https://wa.me/${AGENCY.chennai.whatsappNumber}?text=${encodeURIComponent(formatted)}`;
 
     const subject = encodeURIComponent(
-      `Project Enquiry: ${values.name.trim()} (${values.interestedIn || 'Website Solution'})`
+      `Project Enquiry (${values.preferredOffice}): ${values.name.trim()} (${values.interestedIn || 'Website Solution'})`
     );
     const body = encodeURIComponent(formatted);
     const mailto = `mailto:${AGENCY.email}?subject=${subject}&body=${body}`;
 
     setSubmittedMessage(formatted);
     setWhatsappUrl(waUrl);
+    setWhatsappUrlMumbai(waUrlMumbai);
+    setWhatsappUrlChennai(waUrlChennai);
     setEmailUrl(mailto);
 
     return { waUrl, mailto, formatted };
@@ -166,6 +176,8 @@ export const ContactForm: React.FC = () => {
     setValues(INITIAL_VALUES);
     setSubmittedMessage(null);
     setWhatsappUrl('');
+    setWhatsappUrlMumbai('');
+    setWhatsappUrlChennai('');
     setEmailUrl('');
     setErrors({});
     setCopied(false);
@@ -179,7 +191,7 @@ export const ContactForm: React.FC = () => {
           Send Us a Message
         </h2>
         <p className="text-sm text-slate-400">
-          Fill out the form and we'll get back to you shortly.
+          Fill out the form and our Mumbai or Chennai team will get back to you shortly.
         </p>
       </div>
 
@@ -196,7 +208,7 @@ export const ContactForm: React.FC = () => {
               <span>Enquiry Details Prepared</span>
             </div>
             <p className="text-sm text-slate-300 leading-relaxed">
-              We've prefilled your project details. Choose your preferred channel below to send your enquiry directly to BizTap.
+              We've prefilled your project details. Choose your preferred city WhatsApp line or email below to send your enquiry directly to BizTap.
             </p>
             <p className="text-xs text-amber-300/90 font-medium">
               Note: Please tap &ldquo;Send&rdquo; inside WhatsApp or your email client to complete sending your message.
@@ -208,21 +220,31 @@ export const ContactForm: React.FC = () => {
             {submittedMessage}
           </div>
 
-          {/* Actions: Send via WhatsApp or Send via Email */}
-          <div className="flex flex-col sm:flex-row gap-3 pt-2">
+          {/* Actions: Send via WhatsApp Mumbai, Chennai, or Email */}
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 pt-2">
             <a
-              href={whatsappUrl}
+              href={whatsappUrlMumbai}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-emerald-950/30 transition-all cursor-pointer"
+              className="flex-1 min-w-[190px] inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-emerald-950/30 transition-all cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>Send via WhatsApp</span>
+              <span>WhatsApp Mumbai</span>
+            </a>
+
+            <a
+              href={whatsappUrlChennai}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 min-w-[190px] inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-emerald-950/30 transition-all cursor-pointer"
+            >
+              <MessageSquare className="w-4 h-4" />
+              <span>WhatsApp Chennai</span>
             </a>
 
             <a
               href={emailUrl}
-              className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-900/30 transition-all cursor-pointer"
+              className="flex-1 min-w-[150px] inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white font-bold text-sm rounded-xl shadow-lg shadow-blue-900/30 transition-all cursor-pointer"
             >
               <Mail className="w-4 h-4" />
               <span>Send via Email</span>
@@ -456,7 +478,49 @@ export const ContactForm: React.FC = () => {
             </div>
           </div>
 
-          {/* Field 7: Your Message */}
+          {/* Field 7: Preferred Office / City */}
+          <div className="space-y-1.5">
+            <label
+              htmlFor="contact-office"
+              className="block text-xs font-semibold text-slate-300 uppercase tracking-wider"
+            >
+              Contact Preference
+            </label>
+            <div className="grid grid-cols-2 gap-3" id="contact-office">
+              <button
+                type="button"
+                onClick={() => setValues((prev) => ({ ...prev, preferredOffice: 'Mumbai' }))}
+                className={`py-3 px-3.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-1 cursor-pointer ${
+                  values.preferredOffice === 'Mumbai'
+                    ? 'bg-blue-600/20 border-blue-500 text-white shadow-sm ring-1 ring-blue-500/50'
+                    : 'bg-[#0B1426] border-slate-700/80 text-slate-400 hover:text-slate-200 hover:border-slate-600'
+                }`}
+              >
+                <span className="font-bold text-white flex items-center gap-1.5">
+                  <span className={`w-2 h-2 rounded-full ${values.preferredOffice === 'Mumbai' ? 'bg-blue-400' : 'bg-slate-600'}`} />
+                  Mumbai
+                </span>
+                <span className="text-[11px] text-blue-400 font-mono">+91 89280 51768</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setValues((prev) => ({ ...prev, preferredOffice: 'Chennai' }))}
+                className={`py-3 px-3.5 rounded-xl border text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-1 cursor-pointer ${
+                  values.preferredOffice === 'Chennai'
+                    ? 'bg-blue-600/20 border-blue-500 text-white shadow-sm ring-1 ring-blue-500/50'
+                    : 'bg-[#0B1426] border-slate-700/80 text-slate-400 hover:text-slate-200 hover:border-slate-600'
+                }`}
+              >
+                <span className="font-bold text-white flex items-center gap-1.5">
+                  <span className={`w-2 h-2 rounded-full ${values.preferredOffice === 'Chennai' ? 'bg-blue-400' : 'bg-slate-600'}`} />
+                  Chennai
+                </span>
+                <span className="text-[11px] text-blue-400 font-mono">+91 93729 48245</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Field 8: Your Message */}
           <div className="space-y-1.5">
             <label
               htmlFor="contact-message"
@@ -500,7 +564,7 @@ export const ContactForm: React.FC = () => {
               className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-600 text-white font-bold text-sm rounded-xl shadow-lg shadow-emerald-950/30 transition-all disabled:opacity-60 cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>{isSubmitting ? 'Preparing...' : 'Send via WhatsApp'}</span>
+              <span>{isSubmitting ? 'Preparing...' : `Send to WhatsApp (${values.preferredOffice})`}</span>
             </button>
 
             <button

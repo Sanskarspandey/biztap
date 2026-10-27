@@ -132,23 +132,35 @@ export const Navbar: React.FC<NavbarProps> = ({
             ))}
           </nav>
 
-          {/* Desktop Right Actions */}
-          <div className="hidden lg:flex items-center gap-4">
-            {/* Direct Contact Phone Link */}
-            <a
-              href={`tel:${AGENCY.phone.replace(/\s+/g, '')}`}
-              className="text-xs text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors font-medium px-2 py-1 rounded-md hover:bg-slate-800/50"
-              title="Call BizTap directly"
-            >
-              <PhoneCall className="w-3.5 h-3.5 text-blue-400" />
-              <span>{AGENCY.phone}</span>
-            </a>
+          {/* Desktop Right Actions: Mumbai & Chennai Contact Numbers */}
+          <div className="hidden lg:flex items-center gap-3 xl:gap-4">
+            <div className="flex items-center gap-2 xl:gap-3 text-xs">
+              <a
+                href={AGENCY.mumbai.telUrl}
+                className="text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors font-medium px-2 py-1 rounded-md hover:bg-slate-800/50"
+                title="Call BizTap Mumbai (+91 89280 51768)"
+              >
+                <PhoneCall className="w-3.5 h-3.5 text-blue-400" />
+                <span className="text-slate-400 font-semibold">Mumbai:</span>
+                <span>{AGENCY.mumbai.phone}</span>
+              </a>
+              <span className="text-slate-700">|</span>
+              <a
+                href={AGENCY.chennai.telUrl}
+                className="text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors font-medium px-2 py-1 rounded-md hover:bg-slate-800/50"
+                title="Call BizTap Chennai (+91 93729 48245)"
+              >
+                <PhoneCall className="w-3.5 h-3.5 text-blue-400" />
+                <span className="text-slate-400 font-semibold">Chennai:</span>
+                <span>{AGENCY.chennai.phone}</span>
+              </a>
+            </div>
 
             {/* "Get a Quote" Button */}
             <button
               type="button"
               onClick={onOpenQuote}
-              className="px-5 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 rounded-full transition-all shadow-[0_0_15px_rgba(37,99,235,0.35)] focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
+              className="px-4 xl:px-5 py-2 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 rounded-full transition-all shadow-[0_0_15px_rgba(37,99,235,0.35)] focus:outline-none focus:ring-2 focus:ring-blue-400 cursor-pointer"
             >
               Get a Quote
             </button>
@@ -200,16 +212,30 @@ export const Navbar: React.FC<NavbarProps> = ({
             ))}
           </div>
 
-          <div className="pt-3 border-t border-slate-800 flex flex-col gap-2.5">
+          <div className="pt-3 border-t border-slate-800 flex flex-col gap-2">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-1">
+              Call BizTap Offices:
+            </span>
             <a
-              href={`tel:${AGENCY.phone.replace(/\s+/g, '')}`}
-              className="px-3 py-2 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-200 flex items-center justify-between"
+              href={AGENCY.mumbai.telUrl}
+              className="px-3.5 py-2.5 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-200 flex items-center justify-between hover:border-blue-500/40 hover:bg-slate-800 transition-colors"
             >
               <span className="flex items-center gap-2">
                 <PhoneCall className="w-4 h-4 text-blue-400" />
-                <span>Call BizTap</span>
+                <span className="font-semibold text-white">Mumbai</span>
               </span>
-              <span className="font-semibold text-slate-300">{AGENCY.phone}</span>
+              <span className="font-medium text-slate-300">{AGENCY.mumbai.phone}</span>
+            </a>
+
+            <a
+              href={AGENCY.chennai.telUrl}
+              className="px-3.5 py-2.5 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-200 flex items-center justify-between hover:border-blue-500/40 hover:bg-slate-800 transition-colors"
+            >
+              <span className="flex items-center gap-2">
+                <PhoneCall className="w-4 h-4 text-blue-400" />
+                <span className="font-semibold text-white">Chennai</span>
+              </span>
+              <span className="font-medium text-slate-300">{AGENCY.chennai.phone}</span>
             </a>
 
             <button
@@ -218,7 +244,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onOpenContact();
               }}
-              className="w-full py-2.5 text-center text-xs font-semibold text-blue-300 bg-blue-950/50 border border-blue-800/40 rounded-lg hover:bg-blue-900/50 transition-colors cursor-pointer"
+              className="w-full mt-1 py-2.5 text-center text-xs font-semibold text-blue-300 bg-blue-950/50 border border-blue-800/40 rounded-lg hover:bg-blue-900/50 transition-colors cursor-pointer"
             >
               Contact Options (WhatsApp & Email)
             </button>

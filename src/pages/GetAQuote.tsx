@@ -55,7 +55,7 @@ export const GetAQuote: React.FC = () => {
           <div className="mt-12 text-center text-xs text-charcoal-500 space-y-1">
             <p>Prefer to speak with an engineer first?</p>
             <p>
-              Call us directly at <a href={`tel:${COMPANY.phone}`} className="font-bold text-forest-900 underline">{COMPANY.phone}</a> or email <a href={`mailto:${COMPANY.email}`} className="font-bold text-forest-900 underline">{COMPANY.email}</a>.
+              Call us directly: Mumbai <a href={COMPANY.mumbai.telUrl} className="font-bold text-forest-900 underline">{COMPANY.mumbai.phone}</a> &middot; Chennai <a href={COMPANY.chennai.telUrl} className="font-bold text-forest-900 underline">{COMPANY.chennai.phone}</a> or email <a href={`mailto:${COMPANY.email}`} className="font-bold text-forest-900 underline">{COMPANY.email}</a>.
             </p>
           </div>
         </div>

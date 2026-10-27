@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Plus, Minus, HelpCircle, ArrowRight } from 'lucide-react';
+import { Plus, Minus, HelpCircle, ArrowRight, MessageSquare } from 'lucide-react';
 import { FAQS, FAQItem } from '../../data/faq';
+import { AGENCY } from '../../data/agency';
 
 interface FAQSectionProps {
   onScrollToContact?: () => void;
@@ -49,7 +50,8 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onScrollToContact }) => 
   const whatsappMessage = encodeURIComponent(
     'Hi BizTap! I have a few questions about your website development services.'
   );
-  const whatsappUrl = `https://wa.me/919372948245?text=${whatsappMessage}`;
+  const whatsappUrlMumbai = `https://wa.me/${AGENCY.mumbai.whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappUrlChennai = `https://wa.me/${AGENCY.chennai.whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <section id="faq" className="relative py-20 sm:py-28 scroll-mt-24 z-10 border-t border-slate-800/80">
@@ -68,13 +70,22 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onScrollToContact }) => 
           <p className="text-base sm:text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto">
             Everything you need to know before getting started. Can't find an answer?{' '}
             <a
-              href={whatsappUrl}
+              href={whatsappUrlMumbai}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300 font-semibold underline underline-offset-2 transition-colors"
             >
-              Chat with us on WhatsApp.
-            </a>
+              WhatsApp Mumbai
+            </a>{' '}
+            or{' '}
+            <a
+              href={whatsappUrlChennai}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:text-blue-300 font-semibold underline underline-offset-2 transition-colors"
+            >
+              WhatsApp Chennai
+            </a>.
           </p>
         </div>
 
@@ -147,15 +158,24 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onScrollToContact }) => 
             <p className="text-sm text-slate-400">Let's discuss what your business needs.</p>
           </div>
 
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href={whatsappUrl}
+              href={whatsappUrlMumbai}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-600 shadow-[0_0_15px_rgba(16,185,129,0.35)] transition-all cursor-pointer"
             >
-              <span>Chat with Us on WhatsApp</span>
-              <ArrowRight className="w-4 h-4" />
+              <MessageSquare className="w-4 h-4" />
+              <span>WhatsApp Mumbai</span>
+            </a>
+            <a
+              href={whatsappUrlChennai}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-semibold text-white bg-emerald-500 hover:bg-emerald-400 active:bg-emerald-600 shadow-[0_0_15px_rgba(16,185,129,0.35)] transition-all cursor-pointer"
+            >
+              <MessageSquare className="w-4 h-4" />
+              <span>WhatsApp Chennai</span>
             </a>
           </div>
         </div>

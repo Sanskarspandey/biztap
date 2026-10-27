@@ -108,18 +108,28 @@ ${formData.projectDescription}
           {/* Action CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-3">
             <a
-              href={`https://wa.me/${COMPANY.whatsappNumber}?text=${encodeURIComponent(submittedMessage)}`}
+              href={`https://wa.me/${COMPANY.mumbai.whatsappNumber}?text=${encodeURIComponent(submittedMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm rounded-xl shadow-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm rounded-xl shadow-sm transition-colors"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>Send via WhatsApp (+91 9372948245)</span>
+              <span>WhatsApp Mumbai</span>
+            </a>
+
+            <a
+              href={`https://wa.me/${COMPANY.chennai.whatsappNumber}?text=${encodeURIComponent(submittedMessage)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm rounded-xl shadow-sm transition-colors"
+            >
+              <MessageSquare className="w-4 h-4" />
+              <span>WhatsApp Chennai</span>
             </a>
 
             <a
               href={`mailto:${COMPANY.email}?subject=BizTap Project Enquiry - ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(submittedMessage)}`}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-forest-900 hover:bg-forest-800 text-white font-bold text-sm rounded-xl transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 bg-forest-900 hover:bg-forest-800 text-white font-bold text-sm rounded-xl transition-colors"
             >
               <Mail className="w-4 h-4" />
               <span>Send via Email</span>
@@ -337,7 +347,7 @@ ${formData.projectDescription}
           <div className="bg-cream-100/70 p-3 rounded-xl border border-cream-200 text-[11px] text-charcoal-600 flex items-start gap-2">
             <AlertCircle className="w-4 h-4 text-forest-700 flex-shrink-0 mt-0.5" />
             <span>
-              Submitting opens a pre-composed message directly to our official WhatsApp line (+91 9372948245) or email, ensuring zero lost inquiries or unmonitored databases.
+              Submitting opens a pre-composed message directly to our official WhatsApp line (Mumbai: +91 89280 51768 / Chennai: +91 93729 48245) or email, ensuring zero lost inquiries or unmonitored databases.
             </span>
           </div>
 

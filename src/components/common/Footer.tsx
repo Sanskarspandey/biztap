@@ -41,37 +41,76 @@ export const Footer: React.FC = () => {
             </p>
 
             {/* Direct Contact Box */}
-            <div className="bg-[#131D31]/80 rounded-xl p-4 border border-slate-800/80 space-y-2.5 max-w-sm">
+            <div className="bg-[#131D31]/80 rounded-xl p-4 border border-slate-800/80 space-y-3 max-w-sm">
               <span className="text-xs font-bold uppercase tracking-wider text-blue-400 flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5" /> Direct Consultation
               </span>
-              <div className="space-y-1.5 text-xs text-slate-300">
-                <a
-                  href={`tel:${AGENCY.phone.replace(/\s+/g, '')}`}
-                  className="flex items-center gap-2 hover:text-white transition-colors"
-                >
-                  <Phone className="w-3.5 h-3.5 text-blue-400" />
-                  <span>{AGENCY.phone}</span>
-                </a>
-                <a
-                  href={`mailto:${AGENCY.email}`}
-                  className="flex items-center gap-2 hover:text-white transition-colors"
-                >
-                  <Mail className="w-3.5 h-3.5 text-blue-400" />
-                  <span>{AGENCY.email}</span>
-                </a>
+              <div className="space-y-2.5 text-xs text-slate-300">
+                {/* Mumbai */}
+                <div className="space-y-0.5">
+                  <span className="block text-[11px] font-bold text-white uppercase tracking-wider">
+                    Mumbai
+                  </span>
+                  <a
+                    href={AGENCY.mumbai.telUrl}
+                    className="flex items-center gap-2 text-slate-200 hover:text-blue-400 transition-colors font-medium"
+                    title="Call BizTap Mumbai"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-blue-400" />
+                    <span>{AGENCY.mumbai.phone}</span>
+                  </a>
+                </div>
+
+                {/* Chennai */}
+                <div className="space-y-0.5 pt-1.5 border-t border-slate-800/80">
+                  <span className="block text-[11px] font-bold text-white uppercase tracking-wider">
+                    Chennai
+                  </span>
+                  <a
+                    href={AGENCY.chennai.telUrl}
+                    className="flex items-center gap-2 text-slate-200 hover:text-blue-400 transition-colors font-medium"
+                    title="Call BizTap Chennai"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-blue-400" />
+                    <span>{AGENCY.chennai.phone}</span>
+                  </a>
+                </div>
+
+                {/* Email */}
+                <div className="pt-1.5 border-t border-slate-800/80">
+                  <a
+                    href={`mailto:${AGENCY.email}`}
+                    className="flex items-center gap-2 hover:text-white transition-colors"
+                  >
+                    <Mail className="w-3.5 h-3.5 text-blue-400" />
+                    <span>{AGENCY.email}</span>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="pt-1">
+            {/* Dual WhatsApp Buttons */}
+            <div className="pt-1 flex flex-col sm:flex-row gap-2 max-w-sm">
               <a
-                href={AGENCY.whatsappUrl}
+                href={AGENCY.mumbai.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-white rounded-lg text-xs font-bold tracking-wide transition-all shadow-md shadow-emerald-950/20"
+                className="flex-1 inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-white rounded-lg text-xs font-bold tracking-wide transition-all shadow-md shadow-emerald-950/20"
+                aria-label="WhatsApp Mumbai (+91 89280 51768)"
               >
-                <MessageSquare className="w-4 h-4" />
-                <span>Instant WhatsApp Discussion</span>
+                <MessageSquare className="w-3.5 h-3.5" />
+                <span>WhatsApp Mumbai</span>
+              </a>
+
+              <a
+                href={AGENCY.chennai.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 bg-emerald-500 hover:bg-emerald-400 text-white rounded-lg text-xs font-bold tracking-wide transition-all shadow-md shadow-emerald-950/20"
+                aria-label="WhatsApp Chennai (+91 93729 48245)"
+              >
+                <MessageSquare className="w-3.5 h-3.5" />
+                <span>WhatsApp Chennai</span>
               </a>
             </div>
           </div>

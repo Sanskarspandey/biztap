@@ -54,7 +54,7 @@ export const LegalPage: React.FC<LegalPageProps> = ({ type }) => {
         {
           heading: '6. Contact for Privacy Inquiries',
           paragraphs: [
-            `If you have questions regarding your data, you may contact BizTap directly via email at ${COMPANY.email} or by phone at ${COMPANY.phone}.`
+            `If you have questions regarding your data, you may contact BizTap directly via email at ${COMPANY.email} or by phone at Mumbai (${COMPANY.mumbai.phone}) / Chennai (${COMPANY.chennai.phone}).`
           ]
         }
       ]
@@ -225,7 +225,7 @@ export const LegalPage: React.FC<LegalPageProps> = ({ type }) => {
           <div className="mt-12 bg-cream-50 p-6 rounded-2xl border border-cream-200 text-xs text-charcoal-600 space-y-2">
             <h3 className="font-bold text-forest-950 text-sm">Need Clarification?</h3>
             <p>
-              If you have any questions regarding our terms, privacy practices, or hardware replacement guarantees, please contact our support team at <a href={`mailto:${COMPANY.email}`} className="font-bold text-forest-900 underline">{COMPANY.email}</a> or via WhatsApp at <a href={`tel:${COMPANY.phone}`} className="font-bold text-forest-900 underline">{COMPANY.phone}</a>.
+              If you have any questions regarding our terms, privacy practices, or hardware replacement guarantees, please contact our support team at <a href={`mailto:${COMPANY.email}`} className="font-bold text-forest-900 underline">{COMPANY.email}</a> or via phone/WhatsApp at Mumbai: <a href={COMPANY.mumbai.telUrl} className="font-bold text-forest-900 underline">{COMPANY.mumbai.phone}</a> &middot; Chennai: <a href={COMPANY.chennai.telUrl} className="font-bold text-forest-900 underline">{COMPANY.chennai.phone}</a>.
             </p>
           </div>
         </div>

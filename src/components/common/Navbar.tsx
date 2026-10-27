@@ -67,14 +67,25 @@ export const Navbar: React.FC = () => {
             <span className="text-charcoal-300">|</span>
             <span className="text-charcoal-600">Headquartered in India • Remote Delivery</span>
           </div>
-          <div className="flex items-center gap-5">
+          <div className="flex items-center gap-4 text-xs">
             <a
-              href={`tel:${COMPANY.phone}`}
+              href={COMPANY.mumbai.telUrl}
               className="flex items-center gap-1.5 hover:text-forest-900 transition-colors font-medium"
+              title="Call Mumbai (+91 89280 51768)"
             >
               <Phone className="w-3.5 h-3.5 text-forest-700" />
-              {COMPANY.phone}
+              <span>Mumbai: {COMPANY.mumbai.phone}</span>
             </a>
+            <span className="text-cream-400">|</span>
+            <a
+              href={COMPANY.chennai.telUrl}
+              className="flex items-center gap-1.5 hover:text-forest-900 transition-colors font-medium"
+              title="Call Chennai (+91 93729 48245)"
+            >
+              <Phone className="w-3.5 h-3.5 text-forest-700" />
+              <span>Chennai: {COMPANY.chennai.phone}</span>
+            </a>
+            <span className="text-cream-400">|</span>
             <a
               href={`mailto:${COMPANY.email}`}
               className="flex items-center gap-1.5 hover:text-forest-900 transition-colors"
@@ -321,8 +332,8 @@ export const Navbar: React.FC = () => {
               <span>Chat on WhatsApp</span>
             </a>
 
-            <div className="text-center pt-2 text-xs text-charcoal-500">
-              <p>Direct Support: {COMPANY.phone}</p>
+            <div className="text-center pt-2 text-xs text-charcoal-500 space-y-0.5">
+              <p>Direct Support: Mumbai {COMPANY.mumbai.phone} | Chennai {COMPANY.chennai.phone}</p>
               <p>{COMPANY.email}</p>
             </div>
           </div>

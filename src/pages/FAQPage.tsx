@@ -108,15 +108,24 @@ export const FAQPage: React.FC = () => {
             <p className="text-xs text-charcoal-600 max-w-md mx-auto">
               Our development leads are available on WhatsApp to answer any commercial or technical inquiries.
             </p>
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col sm:flex-row justify-center gap-3">
               <a
-                href={getWhatsAppUrl('Hi BizTap, I have a specific question that was not answered in your FAQ.')}
+                href={COMPANY.mumbai.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-colors shadow-sm"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-colors shadow-sm"
               >
                 <MessageSquare className="w-4 h-4" />
-                <span>Ask Us on WhatsApp ({COMPANY.phone})</span>
+                <span>WhatsApp Mumbai ({COMPANY.mumbai.phone})</span>
+              </a>
+              <a
+                href={COMPANY.chennai.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider rounded-xl transition-colors shadow-sm"
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span>WhatsApp Chennai ({COMPANY.chennai.phone})</span>
               </a>
             </div>
           </div>

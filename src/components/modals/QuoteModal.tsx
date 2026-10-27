@@ -20,6 +20,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [websiteType, setWebsiteType] = useState('School & College Websites');
+  const [preferredCity, setPreferredCity] = useState<'Mumbai' | 'Chennai'>('Mumbai');
   const [requirements, setRequirements] = useState('');
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -74,6 +75,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
 *Name:* ${name}
 *Phone:* ${phone}
 *Email:* ${email}
+*Preferred Office:* ${preferredCity}
 *Website Type:* ${websiteType}
 *Project Requirements:*
 ${requirements.trim() || 'Standard package quotation requested.'}
@@ -84,7 +86,8 @@ ${requirements.trim() || 'Standard package quotation requested.'}
     e.preventDefault();
     if (!validate()) return;
     const msg = buildMessage();
-    const url = `https://wa.me/${AGENCY.whatsappNumber}?text=${encodeURIComponent(msg)}`;
+    const office = preferredCity === 'Chennai' ? AGENCY.chennai : AGENCY.mumbai;
+    const url = `https://wa.me/${office.whatsappNumber}?text=${encodeURIComponent(msg)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
     onClose();
   };
@@ -203,6 +206,39 @@ ${requirements.trim() || 'Standard package quotation requested.'}
             </select>
           </div>
 
+          {/* Office Preference */}
+          <div>
+            <label className="block text-xs font-semibold text-slate-300 mb-1.5">
+              Preferred Office Location
+            </label>
+            <div className="grid grid-cols-2 gap-2.5">
+              <button
+                type="button"
+                onClick={() => setPreferredCity('Mumbai')}
+                className={`py-2 px-3 rounded-xl border text-xs font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                  preferredCity === 'Mumbai'
+                    ? 'bg-blue-600/25 border-blue-500 text-white shadow-sm ring-1 ring-blue-500/50'
+                    : 'bg-slate-950/70 border-slate-700 text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <span className={`w-1.5 h-1.5 rounded-full ${preferredCity === 'Mumbai' ? 'bg-blue-400' : 'bg-slate-600'}`} />
+                <span>Mumbai (+91 89280)</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setPreferredCity('Chennai')}
+                className={`py-2 px-3 rounded-xl border text-xs font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                  preferredCity === 'Chennai'
+                    ? 'bg-blue-600/25 border-blue-500 text-white shadow-sm ring-1 ring-blue-500/50'
+                    : 'bg-slate-950/70 border-slate-700 text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <span className={`w-1.5 h-1.5 rounded-full ${preferredCity === 'Chennai' ? 'bg-blue-400' : 'bg-slate-600'}`} />
+                <span>Chennai (+91 93729)</span>
+              </button>
+            </div>
+          </div>
+
           {/* Requirements Description */}
           <div>
             <label className="block text-xs font-semibold text-slate-300 mb-1">
@@ -221,7 +257,7 @@ ${requirements.trim() || 'Standard package quotation requested.'}
           <div className="bg-slate-950/60 p-3 rounded-xl border border-slate-800 text-[11px] text-slate-400 flex items-start gap-2">
             <AlertCircle className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
             <span>
-              Submitting sends your formatted request directly to our official WhatsApp line (+91 9372948245) or email for an immediate itemized quote.
+              Submitting sends your formatted request directly to our official WhatsApp line (Mumbai: +91 89280 51768 / Chennai: +91 93729 48245) or email for an immediate itemized quote.
             </span>
           </div>
 
@@ -229,16 +265,16 @@ ${requirements.trim() || 'Standard package quotation requested.'}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
             <button
               type="submit"
-              className="w-full py-3 px-4 rounded-xl font-semibold text-sm text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 shadow-md transition-all flex items-center justify-center gap-2"
+              className="w-full py-3 px-4 rounded-xl font-semibold text-sm text-white bg-blue-600 hover:bg-blue-500 active:bg-blue-700 shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>Send via WhatsApp</span>
+              <span>Send to WhatsApp ({preferredCity})</span>
             </button>
 
             <button
               type="button"
               onClick={handleSendEmail}
-              className="w-full py-3 px-4 rounded-xl font-semibold text-sm text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-colors flex items-center justify-center gap-2"
+              className="w-full py-3 px-4 rounded-xl font-semibold text-sm text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
               <Mail className="w-4 h-4" />
               <span>Send via Email</span>

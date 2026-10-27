@@ -47,7 +47,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
               className="w-full sm:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-charcoal-950 font-bold text-sm rounded-xl shadow-premium transition-all flex items-center justify-center gap-2 active:scale-95"
             >
               <MessageSquare className="w-4 h-4 text-charcoal-950" />
-              <span>Discuss on WhatsApp ({COMPANY.phone})</span>
+              <span>Discuss on WhatsApp (Mumbai &amp; Chennai)</span>
             </a>
           ) : (
             <Link
