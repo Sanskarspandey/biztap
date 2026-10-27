@@ -142,13 +142,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   schools: {
     industrySlug: 'schools',
     industryName: 'Schools & Educational Institutes',
-    startingPrice: '₹8,999',
+    startingPrice: '₹39,999',
     tiers: [
       {
         id: 'schools-starter',
         name: 'Starter Academic',
-        price: 8999,
-        priceDisplay: '₹8,999',
+        price: 39999,
+        priceDisplay: '₹39,999',
         billingType: 'one-time',
         description: 'Clean, respectable informational portal for small schools, preschools, and tuition centers.',
         pages: 'Up to 5 Pages (Home, About, Academics, Gallery, Contact)',
@@ -214,13 +214,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   clinics: {
     industrySlug: 'clinics',
     industryName: 'Clinics & Healthcare Centers',
-    startingPrice: '₹12,999',
+    startingPrice: '₹29,999',
     tiers: [
       {
         id: 'clinics-starter',
         name: 'Practice Starter',
-        price: 12999,
-        priceDisplay: '₹12,999',
+        price: 29999,
+        priceDisplay: '₹29,999',
         billingType: 'one-time',
         description: 'Clean medical website that builds patient trust and makes consultation booking effortless.',
         pages: 'Up to 5 Pages (Home, About Doctor, Services, Clinic Tour, Contact)',
@@ -285,13 +285,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'shops-retail': {
     industrySlug: 'shops-retail',
     industryName: 'Shops & Retail Stores',
-    startingPrice: '₹9,999',
+    startingPrice: '₹24,999',
     tiers: [
       {
         id: 'shops-starter',
         name: 'Digital Showcase',
-        price: 9999,
-        priceDisplay: '₹9,999',
+        price: 24999,
+        priceDisplay: '₹24,999',
         billingType: 'one-time',
         description: 'Digital catalog website letting local customers browse products and order via WhatsApp.',
         pages: 'Up to 6 Pages (Catalog, Featured Products, About, Location, Contact)',
@@ -356,13 +356,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   photography: {
     industrySlug: 'photography',
     industryName: 'Photography & Creative Studios',
-    startingPrice: '₹4,999',
+    startingPrice: '₹19,999',
     tiers: [
       {
         id: 'photo-starter',
         name: 'Creative Portfolio',
-        price: 4999,
-        priceDisplay: '₹4,999',
+        price: 19999,
+        priceDisplay: '₹19,999',
         billingType: 'one-time',
         description: 'Stunning visual portfolio that showcases your best shots with fast image loading.',
         pages: 'Up to 4 Pages (Portfolio Gallery, About, Services, Booking Enquiry)',
@@ -382,8 +382,8 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
         id: 'photo-pro',
         name: 'Studio Master',
         badge: 'Most Popular',
-        price: 9999,
-        priceDisplay: '₹9,999',
+        price: 29999,
+        priceDisplay: '₹29,999',
         billingType: 'one-time',
         description: 'Comprehensive photography studio website with client proofs, wedding stories, and booking system.',
         pages: 'Up to 8 Pages (Multiple galleries, weddings, corporate, studio tour)',
@@ -404,8 +404,8 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
       {
         id: 'photo-premium',
         name: 'Production Agency',
-        price: 16999,
-        priceDisplay: '₹16,999',
+        price: 39999,
+        priceDisplay: '₹39,999',
         billingType: 'one-time',
         description: 'Flagship creative agency website with cinematic transitions and project case studies.',
         pages: 'Up to 14 Pages',
@@ -427,13 +427,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'restaurants-cafes': {
     industrySlug: 'restaurants-cafes',
     industryName: 'Restaurants, Cafés & Food Outlets',
-    startingPrice: '₹7,999',
+    startingPrice: '₹24,999',
     tiers: [
       {
         id: 'dine-starter',
         name: 'Café Spotlight',
-        price: 7999,
-        priceDisplay: '₹7,999',
+        price: 24999,
+        priceDisplay: '₹24,999',
         billingType: 'one-time',
         description: 'Mouthwatering menu website that turns local searchers into dining guests.',
         pages: 'Up to 5 Pages (Home, Digital Menu, About, Gallery, Location)',
@@ -498,13 +498,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'gyms-fitness': {
     industrySlug: 'gyms-fitness',
     industryName: 'Gyms, Fitness Centers & Personal Trainers',
-    startingPrice: '₹7,999',
+    startingPrice: '₹24,999',
     tiers: [
       {
         id: 'gym-starter',
         name: 'Fitness Pro',
-        price: 7999,
-        priceDisplay: '₹7,999',
+        price: 24999,
+        priceDisplay: '₹24,999',
         billingType: 'one-time',
         description: 'High-energy website highlighting your facility, plans, and converting visits into free trial passes.',
         pages: 'Up to 5 Pages (Home, Memberships, Facilities, Schedule, Contact)',
@@ -569,13 +569,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   salons: {
     industrySlug: 'salons',
     industryName: 'Salons & Unisex Parlours',
-    startingPrice: '₹9,999',
+    startingPrice: '₹24,999',
     tiers: [
       {
         id: 'salon-starter',
         name: 'Salon Presence',
-        price: 9999,
-        priceDisplay: '₹9,999',
+        price: 24999,
+        priceDisplay: '₹24,999',
         billingType: 'one-time',
         description: 'Chic salon website that displays your style menu and fills your appointment book.',
         pages: 'Up to 5 Pages (Home, Services & Rate Card, Stylists, Gallery, Contact)',
@@ -595,8 +595,8 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
         id: 'salon-pro',
         name: 'Studio Glamour',
         badge: 'Recommended',
-        price: 15999,
-        priceDisplay: '₹15,999',
+        price: 34999,
+        priceDisplay: '₹34,999',
         billingType: 'one-time',
         description: 'High-end salon portal with bridal/groom packages, appointment scheduler, and VIP membership card info.',
         pages: 'Up to 10 Pages (Specialist treatments, packages, bridal, team)',
@@ -617,8 +617,8 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
       {
         id: 'salon-premium',
         name: 'Salon Chain',
-        price: 24999,
-        priceDisplay: '₹24,999',
+        price: 49999,
+        priceDisplay: '₹49,999',
         billingType: 'one-time',
         description: 'Bespoke multi-branch salon brand website with academy course enrollments and franchise leads.',
         pages: 'Up to 16 Pages',
@@ -640,13 +640,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'beauty-parlours': {
     industrySlug: 'beauty-parlours',
     industryName: 'Beauty Parlours & Makeup Studios',
-    startingPrice: '₹4,999',
+    startingPrice: '₹24,999',
     tiers: [
       {
         id: 'beauty-starter',
         name: 'Beauty Glow',
-        price: 4999,
-        priceDisplay: '₹4,999',
+        price: 24999,
+        priceDisplay: '₹24,999',
         billingType: 'one-time',
         description: 'Affordable, elegant website for beauty parlours and makeup artists to show services and get bookings.',
         pages: 'Up to 4 Pages (Services, Bridal Gallery, Packages, Contact)',
@@ -710,13 +710,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'builders-architects': {
     industrySlug: 'builders-architects',
     industryName: 'Builders, Architects & Interior Designers',
-    startingPrice: '₹14,999',
+    startingPrice: '₹39,999',
     tiers: [
       {
         id: 'build-starter',
         name: 'Firm Portfolio',
-        price: 14999,
-        priceDisplay: '₹14,999',
+        price: 39999,
+        priceDisplay: '₹39,999',
         billingType: 'one-time',
         description: 'Authoritative, architecturally refined website showcasing your design aesthetic and completed structures.',
         pages: 'Up to 6 Pages (Projects, About Firm, Services, Philosophy, Contact)',
@@ -781,13 +781,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'ca-tax-consultants': {
     industrySlug: 'ca-tax-consultants',
     industryName: 'Chartered Accountants & Tax Consultants',
-    startingPrice: '₹12,999',
+    startingPrice: '₹29,999',
     tiers: [
       {
         id: 'ca-starter',
         name: 'Practice Standard',
-        price: 12999,
-        priceDisplay: '₹12,999',
+        price: 29999,
+        priceDisplay: '₹29,999',
         billingType: 'one-time',
         description: 'Distinguished, ICAI-guideline-compliant website establishing professional credibility and practice areas.',
         pages: 'Up to 6 Pages (Firm Profile, Partners, Services, Resources, Contact)',
@@ -852,13 +852,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'lawyers-legal': {
     industrySlug: 'lawyers-legal',
     industryName: 'Lawyers & Legal Practitioners',
-    startingPrice: '₹12,999',
+    startingPrice: '₹29,999',
     tiers: [
       {
         id: 'law-starter',
         name: 'Advocate Profile',
-        price: 12999,
-        priceDisplay: '₹12,999',
+        price: 29999,
+        priceDisplay: '₹29,999',
         billingType: 'one-time',
         description: 'Dignified, Bar Council of India compliant informational profile presenting practice areas and credentials.',
         pages: 'Up to 5 Pages (Profile, Practice Areas, Courts, Office, Contact)',
@@ -878,8 +878,8 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
         id: 'law-pro',
         name: 'Law Chambers',
         badge: 'Recommended',
-        price: 21999,
-        priceDisplay: '₹21,999',
+        price: 44999,
+        priceDisplay: '₹44,999',
         billingType: 'one-time',
         description: 'Authoritative law chambers website covering multiple partners, corporate law solutions, and legal articles.',
         pages: 'Up to 10 Pages (Verticals, associate profiles, legal insights, contact)',
@@ -900,8 +900,8 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
       {
         id: 'law-premium',
         name: 'Full-Service Law Firm',
-        price: 34999,
-        priceDisplay: '₹34,999',
+        price: 64999,
+        priceDisplay: '₹64,999',
         billingType: 'one-time',
         description: 'Elite corporate law firm digital presence built for high-stakes corporate retainers and cross-border advisory.',
         pages: 'Up to 18 Pages',
@@ -923,13 +923,13 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   portfolios: {
     industrySlug: 'portfolios',
     industryName: 'Personal Portfolios & Freelancers',
-    startingPrice: '₹3,999',
+    startingPrice: '₹14,999',
     tiers: [
       {
         id: 'port-starter',
         name: 'Resume Bio',
-        price: 3999,
-        priceDisplay: '₹3,999',
+        price: 14999,
+        priceDisplay: '₹14,999',
         billingType: 'one-time',
         description: 'Crisp single-page or mini-portfolio to share on LinkedIn, resumes, and client introductions.',
         pages: '1 Fast Single-Page Portfolio',
@@ -994,14 +994,14 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'hotels-hospitality': {
     industrySlug: 'hotels-hospitality',
     industryName: 'Hotels, Resorts & Hospitality',
-    startingPrice: 'Custom quote',
+    startingPrice: '₹39,999',
     tiers: [
       {
         id: 'hotel-starter',
         name: 'Boutique Stay',
-        price: 'Custom quote',
-        priceDisplay: 'Custom quote',
-        billingType: 'custom',
+        price: 39999,
+        priceDisplay: '₹39,999',
+        billingType: 'one-time',
         description: 'Immersive hotel presentation that highlights rooms, amenities, and drives direct WhatsApp booking enquiries without OTA commissions.',
         pages: 'Scoped to your property (Typically 6–10 Pages)',
         deliveryTime: '10–14 business days (estimated)',
@@ -1064,14 +1064,14 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
   'real-estate': {
     industrySlug: 'real-estate',
     industryName: 'Real Estate Agencies & Property Consultants',
-    startingPrice: 'Custom quote',
+    startingPrice: '₹39,999',
     tiers: [
       {
         id: 'real-starter',
         name: 'Consultant Presence',
-        price: 'Custom quote',
-        priceDisplay: 'Custom quote',
-        billingType: 'custom',
+        price: 39999,
+        priceDisplay: '₹39,999',
+        billingType: 'one-time',
         description: 'High-converting property advisory website presenting verified listings and capturing buyer/tenant leads.',
         pages: 'Scoped to requirements (Typically 6–10 Pages)',
         deliveryTime: '8–12 business days (estimated)',
@@ -1090,9 +1090,9 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
         id: 'real-pro',
         name: 'Agency Portal',
         badge: 'Recommended',
-        price: 'Custom quote',
-        priceDisplay: 'Custom quote',
-        billingType: 'custom',
+        price: 59999,
+        priceDisplay: '₹59,999',
+        billingType: 'one-time',
         description: 'Feature-rich real estate agency website with agent profiles, loan EMI calculator, and project microsites.',
         pages: 'Typically 12–18 Pages',
         deliveryTime: '15–20 business days (estimated)',
@@ -1112,9 +1112,9 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
       {
         id: 'real-premium',
         name: 'Developer Network',
-        price: 'Custom quote',
-        priceDisplay: 'Custom quote',
-        billingType: 'custom',
+        price: 89999,
+        priceDisplay: '₹89,999',
+        billingType: 'one-time',
         description: 'Enterprise property portal for nationwide brokerages or land banking companies with custom lead routing.',
         pages: 'Scalable Database-driven Portal',
         deliveryTime: '20–30 business days (estimated)',
@@ -1128,6 +1128,33 @@ export const INDUSTRY_PRICING: Record<string, IndustryPricingData> = {
         ],
         exclusions: ['Third-party legal title verification software'],
         idealFor: 'Large property brokerages, corporate real estate firms, and institutional land consultants'
+      }
+    ]
+  },
+  ecommerce: {
+    industrySlug: 'ecommerce',
+    industryName: 'E-commerce Stores',
+    startingPrice: '₹59,999',
+    tiers: [
+      {
+        id: 'ecom-starter',
+        name: 'E-Commerce Storefront',
+        price: 59999,
+        priceDisplay: '₹59,999',
+        billingType: 'one-time',
+        description: 'Complete transactional e-commerce store with catalog, shopping cart, domestic payments, and order tracking.',
+        pages: 'Complete Online Store (Catalog, Cart, Checkout, Policies)',
+        deliveryTime: '12–16 business days (estimated)',
+        revisions: '3 rounds of design revisions',
+        features: [
+          'Product catalog and category filtering',
+          'Online shopping cart and secure checkout workflow',
+          'Domestic payment gateway integration (Razorpay / Cashfree UPI, cards)',
+          'Customer order notification via email and WhatsApp',
+          'Coupon codes & promotional pricing support'
+        ],
+        exclusions: ['Custom third-party courier API contract (setup guidance provided)'],
+        idealFor: 'Direct-to-consumer brands, retail shops moving online, and modern product sellers'
       }
     ]
   },

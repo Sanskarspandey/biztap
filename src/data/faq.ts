@@ -11,7 +11,7 @@ export const FAQS: FAQItem[] = [
     category: 'Pricing & Packages',
     question: 'How much does a website cost?',
     answer:
-      'Our pricing depends on your industry and the features you need. Starter plans begin at ₹8,999 for schools and ₹9,999 for shops. Beauty parlours start at ₹4,999. Each plan includes free hosting for the first 3 months. Tell us your requirements in our contact form for an itemized estimate.'
+      'Our pricing depends on your industry and the features you need. Starter plans begin at ₹39,999 for schools and ₹24,999 for shops. Salons start at ₹24,999. Each plan includes free hosting for the first 3 months. Tell us your requirements in our contact form for an itemized estimate.'
   },
   {
     id: 'faq-2',

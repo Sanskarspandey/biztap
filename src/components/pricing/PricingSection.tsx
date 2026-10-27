@@ -39,7 +39,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
       id: 'starter-web',
       name: 'Starter Business Website',
       badge: 'Best for Small Outlets',
-      priceDisplay: '₹8,999',
+      priceDisplay: '₹24,999',
       billingType: 'one-time',
       description:
         'Clean, fast 5-page informational web presence ideal for preschools, salons, consultants, and neighborhood retail.',
@@ -57,7 +57,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
       id: 'standard-web',
       name: 'Professional Business Website',
       badge: 'Most Popular',
-      priceDisplay: '₹12,999',
+      priceDisplay: '₹39,999',
       billingType: 'one-time',
       isPopular: true,
       description:
@@ -77,7 +77,7 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onSelectPlan }) 
       id: 'ecommerce-web',
       name: 'E-Commerce Storefront',
       badge: 'Online Selling',
-      priceDisplay: '₹14,999',
+      priceDisplay: '₹59,999',
       billingType: 'one-time',
       description:
         'Full storefront with product catalogue, payment gateway checkout, shopping cart, and instant WhatsApp order notifications.',

@@ -143,7 +143,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
     if (onOpenQuoteWithService) {
       onOpenQuoteWithService(
         'School Websites',
-        'Requesting a school website development quote (starting ₹8,999).'
+        'Requesting a school website development quote (starting at ₹39,999).'
       );
     } else {
       handleConsultationClick();
@@ -724,7 +724,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 BizTap School Website Solutions
               </h2>
               <p>
-                BizTap offers school website development starting at <strong className="text-white font-bold">₹8,999</strong>.
+                BizTap offers school website development starting at <strong className="text-white font-bold">₹39,999</strong>.
               </p>
               <p>
                 A school website's final cost depends on the required pages, functionality, content, and agreed scope. Advanced features such as an interactive virtual tour, staff-managed notice board CMS, online fee payment gateways, and comprehensive student portals are scoped and quoted separately based on your institution's specific needs.
@@ -1043,19 +1043,19 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 text-sm">
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">School Websites</span>
-                    <span className="text-blue-400 font-bold">₹8,999</span>
+                    <span className="text-blue-400 font-bold">₹39,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Clinic &amp; Healthcare Websites</span>
-                    <span className="text-blue-400 font-bold">₹12,999</span>
+                    <span className="text-blue-400 font-bold">₹29,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">E-commerce Websites</span>
-                    <span className="text-blue-400 font-bold">₹9,999</span>
+                    <span className="text-blue-400 font-bold">₹59,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Personal Portfolio Websites</span>
-                    <span className="text-blue-400 font-bold">₹3,999</span>
+                    <span className="text-blue-400 font-bold">₹14,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Gaming Café Websites</span>
@@ -1063,27 +1063,27 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Photography Websites</span>
-                    <span className="text-blue-400 font-bold">₹4,999</span>
+                    <span className="text-blue-400 font-bold">₹19,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Restaurant &amp; Café Websites</span>
-                    <span className="text-blue-400 font-bold">₹7,999</span>
+                    <span className="text-blue-400 font-bold">₹24,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Gym &amp; Fitness Websites</span>
-                    <span className="text-blue-400 font-bold">₹7,999</span>
+                    <span className="text-blue-400 font-bold">₹24,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Salon &amp; Beauty Websites</span>
-                    <span className="text-blue-400 font-bold">₹4,999</span>
+                    <span className="text-blue-400 font-bold">₹24,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">CA &amp; Tax Consultant Websites</span>
-                    <span className="text-blue-400 font-bold">₹12,999</span>
+                    <span className="text-blue-400 font-bold">₹29,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Lawyer &amp; Legal Websites</span>
-                    <span className="text-blue-400 font-bold">₹12,999</span>
+                    <span className="text-blue-400 font-bold">₹29,999</span>
                   </div>
                   <div className="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/60 border border-slate-800/60">
                     <span className="text-slate-200 font-medium">Custom Business Websites</span>
@@ -1248,7 +1248,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({
                     'Websites are expensive.'
                   </strong>
                   <p>
-                    Not anymore. BizTap builds professional websites for small businesses starting at just ₹8,999 — a one-time cost with free hosting for the first 3 months.
+                    Not anymore. BizTap builds professional websites for small businesses starting at just ₹14,999 — a one-time cost with free hosting for the first 3 months.
                   </p>
                 </div>
 

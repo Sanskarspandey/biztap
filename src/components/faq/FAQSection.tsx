@@ -31,7 +31,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ onScrollToContact }) => 
     if (item.id === 'faq-1') {
       return (
         <p>
-          Our pricing depends on your industry and the features you need. Starter plans begin at ₹8,999 for schools and ₹9,999 for shops. Beauty parlours start at ₹4,999. Each plan includes free hosting for the first 3 months. Tell us your requirements in our{' '}
+          Our pricing depends on your industry and the features you need. Starter plans begin at ₹39,999 for schools and ₹24,999 for shops. Salons start at ₹24,999. Each plan includes free hosting for the first 3 months. Tell us your requirements in our{' '}
           <a
             href="#contact"
             onClick={handleContactClick}
