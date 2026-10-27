@@ -27,7 +27,11 @@ export const Logo: React.FC<LogoProps> = ({ className = '', onClick }) => {
     >
       {/* Icon Badge - Modern developer/code symbol inside rounded-square container */}
       <div className="relative flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-br from-blue-600/30 via-blue-900/40 to-slate-900 border border-blue-500/40 shadow-[0_0_15px_rgba(59,130,246,0.25)] group-hover:border-blue-400 transition-colors flex-shrink-0">
-        <Code2 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 group-hover:text-blue-300 transition-colors stroke-[2.2]" />
+        <Code2
+          className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 group-hover:text-blue-300 transition-colors"
+          strokeWidth={2.2}
+          aria-hidden="true"
+        />
       </div>
 
       {/* Wordmark: Biz in White, Tap in Electric Blue */}
